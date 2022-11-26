@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: "danger";
+    src: url(/fonts/Another\ Danger\ -\ Demo.otf);
+}
+
+.lost {
+    transition-delay: 5s;
+    background-image: url(/img/imagens-de-terror-para-papel-de-parede-gif.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+}
+
+h1 {
+    font-family: danger;
+    letter-spacing: 10px;
+    color: red;
+    font-size: 40px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.you-lost {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    margin-top: 150px;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(53, 52, 52);
+    height: 40px;
+    width: 120px;
+}
+
+button:hover{
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes botao{
+    0% {
+        transform: scale(1);
+        background-color: red;
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}

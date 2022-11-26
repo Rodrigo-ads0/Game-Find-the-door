@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lobby.css">
+</head>
+<body>
+    <main>
+        <div class="title">
+            <h1><strong>Settings</strong></h1> 
+        </div>
+            <div class="settings-game">
+                <section class="difficulty">
+                    <h2>Difficulty</h2>
+                    <a href="index.html"><button><strong>Easy</strong></button></a>
+                    <a href="index.html"><button><strong>Medium</strong></button></a>
+                    <a href="index.html"><button><strong>Hard</strong></button></a>
+                </section>
+
+                <section class="sounds">
+                    <h2>Sounds</h2>
+                    <p>Music</p>
+                    <input type="range" min="0" max="100" onchange="onChange()" style="width: 100%" value="100" class="slider" id="sounds-music" >
+                    <p>Sound Effects</p>
+                    <input type="range" min="0" max="100" onchange="onChange()" style="width: 100%" value="100" class="slider" id="sounds-effects">
+                    <p>Mute All</p>
+                    <input type="checkbox"  id="mute-all">
+                    <a class="voltar" href="index.html"><button><strong>Voltar</strong></button></a>
+                </section>
+
+
+            </div>
+           
+        <div class="description">
+            <a target="_blank" href="https://github.com/Rodrigo-ads0">
+                <p class="description">Developed by Wanted</p>
+            </a>
+        </div>
+    </main>
+</body>
+</html>

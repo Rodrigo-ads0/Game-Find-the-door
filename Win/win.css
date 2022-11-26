@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/youwin.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+@font-face {
+    font-family: "danger";
+    src: url(/fonts/Another\ Danger\ -\ Demo.otf);
+}
+
+.you-win {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 150px;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(53, 52, 52);
+    height: 40px;
+    width: 120px;
+}
+
+button:hover{
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+h1 {
+    font-family: danger;
+    letter-spacing: 10px;
+    color: rgb(0, 255, 21);
+    font-size: 40px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+@keyframes botao{
+    0% {
+        transform: scale(1);
+        background-color: rgb(21, 255, 0);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
